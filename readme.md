@@ -49,7 +49,11 @@ An edge from `edges.ndjson` looks like this:
 
 ## optimizing the graph
 
-TODO
+Generating a transit map based on the geographical representation of the network is a computationally [(NP-)hard task](http://www1.pub.informatik.uni-wuerzburg.de/pub/wolff/pub/nw-dlhqm-10.pdf). Given the input graph we would like to find the best representation of it as a transit map, so it is natural to consider this an optimization problem. Some methods have been developed over the years, two of which we implemented / started to investigate. 
+
+One method that uses mixed-integer linear programming by [Martin Nöllenburg and Alexander Wolff](http://www1.pub.informatik.uni-wuerzburg.de/pub/wolff/pub/nw-dlhqm-10.pdf) to solve this task was implemented by us in [julia](https://github.com/dirkschumacher/TransitmapSolver.jl). It is still work in progress, as automated labeling is not yet supported, but already yields good results using the open source solver [COIN-CBC](https://github.com/JuliaOpt/Cbc.jl) for average transit size subway-networks. Also this paper gives a nice overview of the problem in general. Note that mixed-integer linear programming aims at finding a (provable) optimal solution: however an optimal solution in the mathematical sense might not be the most pleasent looking transit map. 
+
+Related to the problem of embedding a graph as a transit map is to decide which order parallel edges should have, so that line crossings at intersections are minimized. This is something we have only started to look into. However seems like this problem can also be formulated as a mixed-integer programming problem. Some [first ideas](https://github.com/dirkschumacher/LineFlowSolver.jl) have been implemented in julia as well.
 
 ## rendering the map
 
