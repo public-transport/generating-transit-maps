@@ -18,7 +18,7 @@ One can build a [graph structure](https://en.wikipedia.org/wiki/Graph_(discrete_
 
 ## generating a graph
 
-@derhuerst wrote [`generate-vbb-graph`](https://github.com/derhuerst/generate-vbb-graph) and [`generate-vbb-graph`](https://github.com/derhuerst/generate-vbb-graph) for this. Both of them generate data in the [JSON Graph Format](https://github.com/jsongraph/json-graph-specification/blob/master/README.rst#json-graph-specification).
+@derhuerst wrote [`generate-vbb-graph`](https://github.com/derhuerst/generate-vbb-graph) and [`generate-db-graph`](https://github.com/derhuerst/generate-db-graph) for this. Both of them generate data in the [JSON Graph Format](https://github.com/jsongraph/json-graph-specification/blob/master/README.rst#json-graph-specification).
 
 They will create two files, `nodes.ndjson` and `edges.ndjson`, which [ndjson](http://ndjson.org)-encoded lists of all nodes and edges, respectively. A node from `nodes.ndjson` looks like this:
 
@@ -59,7 +59,9 @@ Related to the problem of embedding a graph as a transit map is to decide which 
 
 [`generate-vbb-transit-map`](https://github.com/derhuerst/generate-vbb-transit-map) will take the optimized graph as JSON, add line colors and generate an [SVG file](https://developer.mozilla.org/en-US/docs/Web/SVG).
 
-TODO: map picture
+Here's a preliminary map for Berlin subway:
+
+![Berlin subway generated transit map](berlin-subway.svg)
 
 ## improvements & enhancements to be implemented
 
