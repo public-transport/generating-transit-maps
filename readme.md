@@ -69,3 +69,11 @@ TODO: map picture
 - interactive visualisations
 	- hide less important lines to reduce noise, show them on zoom
 	- route planning, similar to [vbb-map-routing](https://github.com/derhuerst/vbb-map-routing)
+
+## outlook: interactive modelling tool
+
+We may create an interactive transit map modelling tool.
+
+- After uploading a graph file, users will be able to see the map get optimized gradually.
+- Users will be able to add additional constraints, e.g. fixing a station to a point, or putting additonal emphasis on the shape of a line.
+- Finally, they will be able to export the graph as SVG, PDF and other open formats.
