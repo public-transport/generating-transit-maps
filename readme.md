@@ -62,6 +62,7 @@ TODO: map picture
 - handle very large graphs (Germany would be ~500k million edges)
 - find a way to avoid intersecting lines
 - add support for node labeling
+- make it enterprise ready
 - interactive visualisations
 	- hide less important lines to reduce noise, show them on zoom
 	- route planning, similar to [vbb-map-routing](https://github.com/derhuerst/vbb-map-routing)
