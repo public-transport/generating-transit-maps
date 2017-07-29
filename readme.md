@@ -61,11 +61,11 @@ Related to the problem of embedding a graph as a transit map is to decide which 
 
 Here's a preliminary map for Berlin subway:
 
-![Berlin subway generated transit map](berlin-subway.svg)
+![Berlin subway generated transit map](https://cdn.rawgit.com/public-transport/generating-transit-maps/master/berlin-subway.svg)
 
 ## improvements & enhancements to be implemented
 
-- handle very large graphs (Germany would be ~500k million edges)
+- handle very large graphs (Germany would be ~500k edges)
 - find a way to avoid intersecting lines
 - add support for node labeling
 - interactive visualisations
